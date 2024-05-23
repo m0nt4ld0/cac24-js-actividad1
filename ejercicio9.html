@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Actividad Práctica JavaScript Unidad 1 | Ejercicio 9</title>
+</head>
+<body onload="contarLetrasA()">
+    <!-- 9. Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a -->
+    <div id="container"></div>
+    <script>
+        function ingresarTexto() {
+            const frase = prompt("Ingrese una frase");
+            return frase;
+        }
+    
+        function contarOcurrencias(caracter, texto, esCaseSensitive) {
+            ocurr = 0;
+            const str = (esCaseSensitive == false ) ? texto.toUpperCase() : texto;
+            const chr = (esCaseSensitive == false ) ? caracter.toUpperCase() : caracter;
+            for(i=0; i<str.length; i++) {
+                if(str[i] == chr)
+                    ocurr+=1;
+            }
+            return ocurr;
+        }
+    
+        function contarLetrasA() {
+            const txt = ingresarTexto();
+            const l = 'a';
+            const cant = contarOcurrencias(l, txt, false);
+            rdo = "La letra " + l + ((cant ==0) ? " no aparece" : " aparece " + cant + " "+ ((cant > 1) ? "veces" : "vez")) + " en el texto '" + txt + "'";
+            document.getElementById('container').innerText = rdo;
+        }
+    </script>
+</body>
+</html>

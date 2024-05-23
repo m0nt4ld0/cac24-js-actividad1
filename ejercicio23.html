@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Ejercicio 23</title>
+</head>
+<!-- 23. Realiza un script que escriba una pirámide del 1 al 30 -->
+<body onload="imprimirValores(30);">
+    <div id="container"></div>
+    <script>
+        function imprimirValores(x) {
+            for(i=0; i<=x; i++) {
+                
+                for(j=0; j<i; j++) {
+                    document.getElementById('container').innerText += (i);
+                }
+                document.getElementById('container').innerText += ("\n");
+            }
+        }
+    </script>
+</body>
+
+</html>

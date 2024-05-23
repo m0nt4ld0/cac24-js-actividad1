@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Ejercicio 25</title>
+</head>
+<!-- 25. Un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de 4 y de 9
+     y que cada 5 líneas muestre una línea horizontal -->
+<body onload="imprimirValores(1,500);">
+    <div id="container"></div>
+    <script>        
+        function esMultiplo(v, m) {
+            return (( m>0 && v % m ==0 ) ? true : false) ;
+        }
+
+        function imprimirValores(x, y) {
+            for(i=x; i<=y; i++) {
+                document.getElementById('container').innerText += (i);
+                if(esMultiplo(i, 4))
+                    document.getElementById('container').innerText += " (Multiplo de 4)";
+                if(esMultiplo(i, 5))
+                    document.getElementById('container').innerHTML += "<br>";
+                if(esMultiplo(i, 9))
+                    document.getElementById('container').innerText += " (Multiplo de 9)";
+                document.getElementById('container').innerText += "\n";
+            }
+        }
+
+    </script>
+</body>
+</html>

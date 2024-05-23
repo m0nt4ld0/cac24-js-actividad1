@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Ejercicio 24</title>
+</head>
+<!--Haz un script que escriba una pirámide inversa de los números del 1 al número que indique el usuario-->
+<body onload="main();">
+    <div id="container"></div>
+    <script>
+        function ingresarValor() {
+            do {
+                x = prompt('Ingrese un número (>=1)');
+            } while(isNaN(x) || x<1);
+            return x;
+        }
+
+        function imprimirValores(x) {
+            for(i=x; i>=0; i--) {
+                for(j=i; j>0; j--) {
+                    document.getElementById('container').innerText += (i);
+                }
+                document.getElementById('container').innerText += ("\n");
+            }
+        }
+
+        function main() {
+            y = ingresarValor();
+            imprimirValores(y);
+        }
+
+    </script>
+</body>
+</html>
