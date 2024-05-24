@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Actividad Práctica JavaScript Unidad 1 | Ejercicio 20</title>
+</head>
+<body onload="ejercicio20()">
+    <!-- 21. Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
+salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -->
+    <div id="container"></div>
+    <script>
+        function ejercicio20() {
+            const palabras = [];
+            do {
+                t = prompt('Ingrese texto');
+                if(t!==null) 
+                    palabras.push(t);
+            } while(t!==null);
+            for(p of palabras) {
+                document.getElementById('container').innerHTML += p + (palabras[palabras.length - 1] !== p ? '-':'');
+            }
+        }
+    </script>
+</body>
+</html>

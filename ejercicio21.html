@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <head>
-    <title>Actividad Práctica JavaScript Unidad 1 | Ejercicio 21</title>
+    <title>Ejercicio 21</title>
 </head>
-<body onload="ejercicio21()">
-    <!-- 21. Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
-salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -->
+<!-- 22. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
+número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar”
+deberá indicarse la suma total de los números introducidos. -->
+<body onload="ejercicio21();">
     <div id="container"></div>
     <script>
         function ejercicio21() {
-            const palabras = [];
+            suma = 0;
             do {
-                t = prompt('Ingrese texto');
-                if(t!==null) 
-                    palabras.push(t);
-            } while(t!==null);
-            for(p of palabras) {
-                document.getElementById('container').innerHTML += p + (palabras[palabras.length - 1] !== p ? '-':'');
-            }
+                x = prompt('Ingrese un número:');
+                const parsedX = parseInt(x);
+                if(!isNaN(parsedX))
+                    suma += parsedX;
+                else
+                    alert("El valor ingresado no es un número");
+            } while(x !== null);
+            alert('El total es de ' + suma);
         }
     </script>
 </body>
+
 </html>

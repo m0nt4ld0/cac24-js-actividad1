@@ -46,12 +46,12 @@ por ninguno otro número que no sea él mismo o la unidad)
 
 ● 9-10: Sobresaliente
 
-21. Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
+20. Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
 salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión
-22. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
+21. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
 número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar”
 deberá indicarse la suma total de los números introducidos.
-23. Realizar una página con un script que calcule el valor de la letra de un número
+22. Realizar una página con un script que calcule el valor de la letra de un número
 de DNI (Documento Nacional de Identidad).
 El algoritmo para calcular la letra del dni es el siguiente :
 
@@ -81,7 +81,7 @@ El algoritmo para calcular la letra del dni es el siguiente :
 666666
 …….
 
-25. Haz un script que escriba una pirámide inversa de los números del 1 al
+24. Haz un script que escriba una pirámide inversa de los números del 1 al
 número que indique el usuario de la siguiente forma : (suponiendo que indica 6).
 
 666666
@@ -96,7 +96,7 @@ número que indique el usuario de la siguiente forma : (suponiendo que indica 6)
 
 1
 
-26. Un script que escriba los números del 1 al 500, que indique cuáles son
+25. Un script que escriba los números del 1 al 500, que indique cuáles son
 múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
 
 1
