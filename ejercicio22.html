@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Ejercicio 22</title>
+</head>
+<!-- 22. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
+número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar”
+deberá indicarse la suma total de los números introducidos. -->
+<body onload="ejercicio22();">
+    <div id="container"></div>
+    <script>
+        function ejercicio22() {
+            suma = 0;
+            do {
+                x = prompt('Ingrese un número:');
+                const parsedX = parseInt(x);
+                if(!isNaN(parsedX))
+                    suma += parsedX;
+                else
+                    alert("El valor ingresado no es un número");
+            } while(x !== null);
+            alert('El total es de ' + suma);
+        }
+    </script>
+</body>
+
+</html>
